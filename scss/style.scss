@@ -177,15 +177,15 @@ li{
   margin-top: 27px;
   position:relative;
   overflow: hidden;
-  &:hover{
-    .sorokovik1{
-      left:0;
-    }
-    .text{
-      bottom: 286px;
+  // &:hover{
+  //   .sorokovik1{
+  //     left:0;
+  //   }
+  //   .text{
+  //     bottom: 286px;
      
-    }
-  }
+  //   }
+  // }
    .angle{
     background-color: #fff;
     width: 900px;
@@ -212,15 +212,16 @@ li{
   }
   .sorokovik1{
     position:absolute;
-    left: -800px;
-    bottom: -4px;
-    transition:all 2s;
+    left: 0x;
+    bottom: -5px;
+    // transition:all 2s;
+    animation-duration: 2s;
     &:after{
       content:url(../images/ellips.png);
       position:absolute;
       top: -118px;
       left: 278px;
-      z-index: 1;
+      z-index: 1!important;
     }
   }
   .books{
@@ -229,15 +230,19 @@ li{
     position:absolute;
     bottom: 0;
     right: 0;
+    animation-duration: 2s
+   
   }
   .text {
     font-size: 30px;
     position: absolute;
-    bottom: -100px;
+    bottom: 286px;
     left: 402px;
     z-index: 1;
+    animation-duration: 3s;
+  
     width: 250px;
-    transition:all 2s;
+    // transition:all 2s;
 }
 .words-of__sorokovik{
   font-size:35px;
@@ -258,59 +263,60 @@ li{
   position:relative;
   margin-top: 27px;
   overflow: hidden;
-  &:hover{
-    .button-1,
-    .button-2,
-    .button-3{
-      left:0;
-    }
-    .button-3{
-      top:293px;
-    }
-    .button-2{
-      top:175px;
-    }
-    .button-1{
-      top:58px;
-    }
-    .button-1-nep,
-    .button-3-nep,
-    .button-2-nep{
-      left:415px;
-    }
-    .answer-1-nep
-     {
-      top: 95px;
-    }
-    .answer-2-nep{
-      top: 201px;
-    }
-    .answer-3-nep{
-      top: 303px;
-    }
-    .answers{
-      .answer-1{
-        top: 30px;
-      }
-      .answer-2{
-        top:149px;
-      }
-      .answer-3{
-       top:288px;
-      }
-    }
+  // &:hover{
+  //   .button-1,
+  //   .button-2,
+  //   .button-3{
+  //     left:0;
+  //   }
+  //   .button-3{
+  //     top:293px;
+  //   }
+  //   .button-2{
+  //     top:175px;
+  //   }
+  //   .button-1{
+  //     top:58px;
+  //   }
+  //   .button-1-nep,
+  //   .button-3-nep,
+  //   .button-2-nep{
+  //     left:415px;
+  //   }
+  //   .answer-1-nep
+  //    {
+  //     top: 95px;
+  //   }
+  //   .answer-2-nep{
+  //     top: 201px;
+  //   }
+  //   .answer-3-nep{
+  //     top: 303px;
+  //   }
+  //   .answers{
+  //     .answer-1{
+  //       top: 30px;
+  //     }
+  //     .answer-2{
+  //       top:149px;
+  //     }
+  //     .answer-3{
+  //      top:288px;
+  //     }
+  //   }
     
     
-  }
+  
     .button-1 {
+      animation-duration: 3s;
       position:absolute;
-      left:1000px;
-      top:293px;
+      left:0px;
+      top:58px;
       border:none;
       color:#fff;
       font-size:48px;
       padding-top: 5px;
-      padding-bottom: 5px;
+      padding-bottom: 5px;  
       padding-left: 20px;
       padding-right: 20px;
       background-color: #b84443;
@@ -335,8 +341,8 @@ li{
     }
     .button-2{
       position:absolute;
-      left:1000px;
-      top:58px;
+      left:0px;
+      top:175px;
       border:none;
       color:#fff;
       font-size:48px;
@@ -350,18 +356,20 @@ li{
       transition:all 3s;
       outline:none;
       cursor: pointer;
+      animation-duration: 3s;
       z-index:1;
     }
     .button-3{
       position:absolute;
-      left: 1000px;
-      top:58px;
+      left: 0px;
+      top:293px;
       border:none;
       color:#fff;
       font-size:48px;
       padding-top: 5px;
       padding-bottom: 5px; 
       transition:ease 3s;
+      animation-duration: 3s;
       padding-left: 20px;
       padding-right: 20px;
       background-color: #b84443;
@@ -386,22 +394,25 @@ li{
     font-weight: 500;
     .answer-1{
       position: absolute;
-      top: -72px;
+      top: 30px;
       width: 500px;
       left: 90px;
+      animation-duration: 3s;
       transition:all 2s;
     }
     .answer-2{
       position:absolute;
-      top:670px;
+      animation-duration: 3s;
+      top:149px;
       transition:all 2s;
       width: 500px;
       left: 90px;
     }
     .answer-3{
       position: absolute;
-      top: 670px;
+      top: 288px;
       width: 530px;
+      animation-duration: 3s;
       transition:all 2s;
       left:90px;
     }
@@ -413,6 +424,7 @@ li{
       left: 401px;
       z-index: 1;
       width: 250px;
+      
   }
   .sorokovik::after{
     top: 5px;
@@ -446,7 +458,7 @@ li{
     }
     .button-1-nep{
       position:absolute;
-      left:1000px;
+      left:415px;
       top:85px;
       border:none;
       color:#fff;
@@ -459,13 +471,14 @@ li{
       border-radius:12px;
       font-weight: 700;
       outline:none; 
-      transition:all 2s;
-      cursor: pointer;
+      transition:all 2s; 
+       animation-duration: 3s;   
+      cursor: pointer;  
       z-index:1;
     }
     .button-2-nep{
       position:absolute;
-      left:1000px;
+      left:415px;
       top:195px;
       border:none;
       color:#fff;
@@ -480,12 +493,14 @@ li{
       outline:none; 
       transition:all 2s;
       cursor: pointer;
+      animation-duration: 3s;   
       z-index:1;
     }
     .button-3-nep{
       position:absolute;
-      left:1000px;
+      left:415px;
       top:293px;
+      animation-duration: 3s;   
       border:none;
       color:#fff;
       font-size:48px;
@@ -497,29 +512,37 @@ li{
       border-radius:12px;
       font-weight: 700;
       outline:none; 
-      transition:all 2s;
       cursor: pointer;
       z-index:1;
     }
     .answer-1-nep{
       position: absolute;
-      top: -100px;
-      left: 500px;
-      transition:all 2s;
+      top: 95px;
+      left: 500px;   
+      animation-duration: 3s;                   
+
     }
     .answer-2-nep{
       position: absolute;
-      top:1200px;
+      top:201px;
       left: 500px;
-      transition:all 2s;
+      animation-duration: 3s;   
     }
     .answer-3-nep{
       position: absolute;
       left: 500px;
-      top:1300px;
-      transition:all 2s;
+      top:303px;
+      animation-duration: 3s;   
     }
     .tab-question3{
       background-image: url(../images/nep/bg-nep.png);
+    }
+    .ochki{
+      position:absolute;
+      width: 133px;
+      left: 108px;
+      bottom:149px;
+      height: 80px;
+      animation-duration: 3s;
     }
   //end nep
